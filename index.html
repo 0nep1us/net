@@ -3,30 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TengiL Division</title>
+    <title>kaga tau apaan</title>
     <!-- Import Montserrat Font from Google Fonts with weight 400 -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Audio player with autoplay and muted -->
-    <div class="navbar">
-  <button class="toggle-button" onclick="toggleNavbar()">☰ Menu</button>
-  <div class="navbar-content">
-    <div class="logo">TLD</div>
-    <div class="center-links">
-      <a href="#about">ABOUT</a>
-      <a href="#partners">PARTNERS</a>
-      <a href="#contact">CONTACT</a>
-    </div>
-    <div class="right-section">
-      <a href="#club" class="always-tengil">AlwaysTengiL</a>
-      <button class="profile-button">Profile</button>
-    </div>
-  </div>
-</div>
     <div class="audio-container">
         <audio id="background-audio" loop muted>
             <source src="audio.mp3" type="audio/mp3">
@@ -64,18 +49,12 @@
     </div>
 
     <script>
-      
+        // Function to play the audio when the button is clicked
         function playMusic() {
             const audio = document.getElementById('background-audio');
-            audio.muted = false; 
-            audio.play(); 
+            audio.muted = false; // Unmute the audio
+            audio.play(); // Play the audio
         }
     </script>
-    <script>
-  function toggleNavbar() {
-    const navbarContent = document.querySelector('.navbar-content');
-    navbarContent.classList.toggle('hidden');
-  }
-</script>
 </body>
 </html>
