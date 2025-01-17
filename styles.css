@@ -164,6 +164,7 @@ audio {
     gap: 10px; /* Add some spacing between links */
     width: 100%; /* Full width */
     margin-top: 10px; /* Add spacing from the logo */
+    align-items: center;
   }
 
   .navbar .right-section {
