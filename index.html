@@ -64,12 +64,18 @@
     </div>
 
     <script>
-        // Function to play the audio when the button is clicked
+      
         function playMusic() {
             const audio = document.getElementById('background-audio');
-            audio.muted = false; // Unmute the audio
-            audio.play(); // Play the audio
+            audio.muted = false; 
+            audio.play(); 
         }
     </script>
+    <script>
+  function toggleNavbar() {
+    const navbarContent = document.querySelector('.navbar-content');
+    navbarContent.classList.toggle('hidden');
+  }
+</script>
 </body>
 </html>
